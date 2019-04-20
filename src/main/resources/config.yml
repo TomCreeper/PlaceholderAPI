@@ -10,8 +10,8 @@
 # Download placeholders: /papi ecloud
 check_updates: true
 cloud_enabled: true
-cloud_allow_unverified_expansions: false
+cloud_allow_unverified_expansions: true
 boolean:
   'true': 'yes'
   'false': 'no'
-date_format: MM/dd/yy HH:mm:ss
+date_format: dd/MM/yyyy HH:mm:ss
