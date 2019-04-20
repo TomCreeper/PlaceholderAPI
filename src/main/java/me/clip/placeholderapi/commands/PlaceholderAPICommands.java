@@ -49,8 +49,8 @@ public class PlaceholderAPICommands implements CommandExecutor {
 
       Msg.msg(s, "PlaceholderAPI &7version &b&o" + plugin.getDescription().getVersion(),
           "&fCreated by&7: &bextended_clip",
-              "&fPapi commands: &b/papi help",
-              "&fEcloud commands: &b/papi ecloud");
+              "&fPAPI commands: &b/papi help",
+              "&fECloud commands: &b/papi ecloud");
       return true;
     } else {
 
@@ -58,7 +58,7 @@ public class PlaceholderAPICommands implements CommandExecutor {
 
         Msg.msg(s, "PlaceholderAPI &aHelp &e(&f" + plugin.getDescription().getVersion() + "&e)",
             "&b/papi",
-            "&fView plugin info/version info",
+            "&fView plugin information/version information",
             "&b/papi list",
             "&fList all placeholder expansions that are currently active",
             "&b/papi info <placeholder name>",
@@ -137,7 +137,7 @@ public class PlaceholderAPICommands implements CommandExecutor {
           Msg.msg(s, "&cThere is no expansion loaded with the identifier: &f" + args[1]);
           return true;
         }
-        Msg.msg(s, "&7Placeholder expansion info for: &f" + ex.getName());
+        Msg.msg(s, "&7Placeholder expansion information for: &f" + ex.getName());
         Msg.msg(s, "&7Status: " + (ex.isRegistered() ? "&aRegistered" : "&cNot registered"));
         if (ex.getAuthor() != null) {
           Msg.msg(s, "&7Created by: &f" + ex.getAuthor());
@@ -279,7 +279,7 @@ public class PlaceholderAPICommands implements CommandExecutor {
         }
 
       } else {
-        Msg.msg(s, "&cIncorrect usage! &7/papi help");
+        Msg.msg(s, "&c&lIncorrect Usage! &r&7/papi help");
       }
     }
     return true;
