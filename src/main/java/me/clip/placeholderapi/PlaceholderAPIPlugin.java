@@ -92,7 +92,7 @@ public class PlaceholderAPIPlugin extends JavaPlugin {
    */
   public static SimpleDateFormat getDateFormat() {
     return dateFormat != null ? dateFormat : new SimpleDateFormat(
-        "MM/dd/yy HH:mm:ss");
+        "dd/MM/yyyy HH:mm:ss");
   }
 
   /**
